@@ -1,3 +1,5 @@
+import './about.css';
+
 export default function About() {
   return (
     <div className="about">
@@ -9,12 +11,14 @@ export default function About() {
           title="YouTube Video"
           allow="autoplay; encrypted-media"
           allowFullScreen>
-          </iframe>
-        <p>With hair that defies gravity and a grin that defies logic, he's the guru of meme stock mastery.</p>
-        <p>He once turned pixelated stonks into pixelated mansions, all while sipping on digital coffee. He's the kind of person who'd invest in intergalactic rubber chickens if they were listed on the market.</p>
-        <p>When he's not predicting the unpredictable, he's teaching squirrels the art of compound interest or hosting bingo nights for Wall Street tycoons.</p>
-        <p>His motto? "Buy low, sell high, and always carry an umbrella in a stock market storm!"</p>
-        <p>So, whether stocks are up, down, or doing the cha-cha, the Stonks Guy's here to remind us that sometimes, you just gotta stonk it till you make it! 🚀📈</p>
+        </iframe>
+        <div className='aboutText'>
+          <p>The guru of meme stock mastery with a grin that defies both gravity and logic.</p>
+          <p>A meme stock virtuoso, he's turned pixelated stonks into pixelated mansions, all while sipping on his trusty digital coffee. </p>
+          <p>When he's not outfoxing market trends, he's imparting the wisdom of compound interests to squirrels or hosting bingo nights for the titans of Wall Street.</p>
+          <p>His motto? "Buy low, sell high, and always carry an umbrella in a stock market storm!"</p>
+          <p>Whether stocks are soaring, plummeting, or doing the cha-cha, Stonks Guy's here to remind us that sometimes, all you need to do is stonk it till you make it! 🚀📈</p>
+        </div>
     </div>
   );
 }
