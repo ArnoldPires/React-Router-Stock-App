@@ -26,13 +26,26 @@
   padding: 8px 0;
   border-bottom: 1px solid #eee;
 }
+.detail a {
+  text-decoration: none;
+}
+.detail a:hover {
+  text-decoration: underline;
+}
 .back a{
   text-decoration: none;
   color: #007bff;
 }
 .label {
-  font-weight: bold;
-}
-.value {
   color: #007bff;
+}
+.stockName {
+  color: #007bff;
+  flex: 1;
+}
+.stockName a {
+  text-decoration: none;
+}
+.lastPrice {
+  flex: 1;
 }

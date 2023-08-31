@@ -19,7 +19,7 @@ function Stock({ stocks }) {
         </div>
         <div className="detail">
           <span className="label">Change</span>
-          <span className="value">{stock.change.toFixed(2)}</span>
+          <span className="value">{stock.change}</span>
         </div>
          <div className="detail">
           <span className="label">Last Price</span>

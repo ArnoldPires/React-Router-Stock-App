@@ -8,8 +8,8 @@ export default function About() {
           src="https://www.youtube.com/embed/01Wpsc5-jxw" // Corrected embed URL
           title="YouTube Video"
           allow="autoplay; encrypted-media"
-          allowFullScreen
-        ></iframe>
+          allowFullScreen>
+          </iframe>
         <p>With hair that defies gravity and a grin that defies logic, he's the guru of meme stock mastery.</p>
         <p>He once turned pixelated stonks into pixelated mansions, all while sipping on digital coffee. He's the kind of person who'd invest in intergalactic rubber chickens if they were listed on the market.</p>
         <p>When he's not predicting the unpredictable, he's teaching squirrels the art of compound interest or hosting bingo nights for Wall Street tycoons.</p>
