@@ -1,30 +1,23 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
+import '../pages/stock.css';
 
 export default function Dashboard({ stocks }) {
-  return (
-    <div className="Dashboard">
-      <h3>Stocks Dashboard</h3>
-      <table role="grid">
-        <thead>
-          <tr>
-            <th scope="col">Company Name</th>
-            <th scope="col">Price</th>
-            <th scope="col">Change</th>
-          </tr>
-        </thead>
-        <tbody>
-          {stocks.map((stock, index) => (
-            <tr key={index}>
-              <Link to={`/stocks/${stock.symbol}`}>
-                <td>{stock.name}</td>
-              </Link>
-              <td>{stock.lastPrice}</td>
-              <td>{stock.change}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+   return (
+    <div className="stock-container">
+      <h3 className="stock-title">Stonk Dashboard</h3>
+      <div className="stock-details">
+        {stocks.map((stock, index) => (
+          <div className="detail" key={index}>
+            <Link to={`/stocks/${stock.symbol}`} className="stockName">
+              {stock.name}
+            </Link>
+            <div className="lastPrice">${stock.lastPrice}</div>
+            <div className="value" style={{ color: stock.change < 0 ? 'red' : 'green' }}>
+              {stock.change}
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

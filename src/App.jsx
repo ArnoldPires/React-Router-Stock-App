@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import Dashboard from "./components/Dashboard";
 import About from "./pages/About";
 import Stock from "./pages/Stock";
-import { stocksWithRoundedChange as Data } from './components/Data';
+import Data from "./components/Data";
 
 function App() {
   return (
